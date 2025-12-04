@@ -1,7 +1,7 @@
 /* Palette updated: prioritize usage in this order */
 :root{
   --primary: #E43636;      /* main accent */
-  --bg-light: #F6EFD2;     /* primary light (use instead of white) */
+  --bg-light: WHITE;     /* primary light (use instead of white) */
   --muted: #E2DDB4;        /* secondary light */
   --charcoal: #0f1111;     /* softer 'black' instead of pure #000 */
   --text-main: var(--bg-light);  /* main text color on dark backgrounds */
