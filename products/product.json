@@ -1,0 +1,31 @@
+{
+  "PRODUCTS": [
+    {
+      "id": 0,
+      "name": "test",
+      "image": "../images/product-1.jpg",
+      "subtitle": "test",
+      "description": "test",
+      "features": "test",
+      "category": "test"
+    },
+     {
+      "id": 1,
+      "name": "fweh",
+      "image": "../images/product-1.jpg",
+      "subtitle": "test",
+      "description": "test",
+      "features": "test",
+      "category": "test"
+    },
+     {
+      "id": 1,
+      "name": "test",
+      "image": "../images/product-1.jpg",
+      "subtitle": "test",
+      "description": "test",
+      "features": "test",
+      "category": "test"
+    }
+  ]
+}
