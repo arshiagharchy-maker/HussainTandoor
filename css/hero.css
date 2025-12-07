@@ -1,0 +1,149 @@
+.container{
+    padding: 0 auto;
+    padding-top: 10em;
+    padding-bottom: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text h1{
+    margin-left: 0.5em;
+    font-size: clamp(4.4rem, 6vw, 9.8rem);
+    line-height: 1.02;
+    margin-bottom: 24px;
+    color: #e5391e;
+}
+
+.hero-text p{
+    margin-left: 2.1em;
+    font-size: clamp(1.4rem, 1.6vw, 4.2rem);
+    margin-bottom: 28px;
+    max-width: 48ch;
+    color: white;
+}
+
+button{
+    margin-left: 5em;
+    padding: 1.5em;
+    border-radius: 5px;
+    border: none;
+    background: var(--accent-color);
+    color: var(--text-color);
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+}
+
+button a, a:visited{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.hero{
+    width: 100%;
+    padding: 40px 0;
+    position: relative;
+    overflow: visible;
+}
+
+.hero .container{
+    padding-right: 4em;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text{
+    flex: 1 1 60%;
+}
+
+.hero-cta button{ 
+    margin-right: 12px; 
+}
+
+.hero-side{
+    flex: 0 0 240px;
+}
+.image-gridA{
+    margin-top: 1em;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 70px);
+    position: relative;
+}
+
+.image-gridB{
+    display: grid;
+    grid-template-columns: 200px 500px;
+    gap: 1em;
+    position: relative;
+    border-color: black;
+}
+
+.image-box{
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    width: clamp(350px, 80vw, 500px);
+    height: clamp(100px, 80vw, 200px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    border: 1px solid rgba(0,0,0,0.18);
+}
+
+.image-boxr{
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    width: clamp(100px, 80vw, 200px);
+    height: clamp(100px, 80vw, 200px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    border: 1px solid rgba(0,0,0,0.18);
+}
+
+.mobile-image{
+    display: none;
+    position: absolute;
+    background: #ffffff;
+    top: 100px;
+    left: 335px;
+    width: 650px;
+    height: 600px;
+    border-radius: 100px;
+}
+
+@media(max-width: 900px){
+    button{
+        font-size: 1em;
+    }
+}
+
+@media(max-width: 700px){
+    button{
+        font-size: 1.8em;
+    }
+
+    .image-gridA, .image-gridB{
+        display: none;
+    }
+
+    .hero-text h1{
+        font-size: 6em;
+        font-weight: 1000px;
+    }
+
+    .hero-text p{
+        font-size: 2em;
+        max-width: 30em;
+        font-weight: 1000px;
+    }
+
+    .mobile-image{
+        display: flex;
+    }
+}
