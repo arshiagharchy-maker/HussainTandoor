@@ -2,147 +2,115 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>[Site Title]</title>
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components.css">
-
-    <!-- new: fonts (Montserrat for headings/brand, Inter for body) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/product-cards.css">
+    <link rel="stylesheet" href="css/team.css">
+    <script src="js/renderProducts.js"></script>
 </head>
 <body>
-<div class="nav-wrapper" style="background:transparent !important; padding:12px 0; position:sticky; top:0; z-index:1000;">
-    <nav class="nav-box" style="background:#E43636; border-radius:18px; margin:0 auto; max-width:calc(100% - 30px); width:1200px; max-width:100%; box-shadow:0 2px 16px 0 rgba(0,0,0,0.1); display:flex; align-items:center; justify-content:space-between; padding:0 20px; height:60px;">
 
-        <div class="nav-left" style="display:flex; align-items:center; gap:12px;">
-            <img src="[Logo Path]" alt="Logo" class="nav-logo" style="height:32px;">
-        </div>
-
-        <ul class="nav-links" style="display:flex; align-items:center; gap:2rem; list-style:none; margin:0; padding:0;">
-            <li><a href="#home" style="color:#F6EFD2; text-decoration:none; font-weight:500;">Home</a></li>
-            <li><a href="#products" style="color:#F6EFD2; text-decoration:none; font-weight:500;">Products</a></li>
-            <li><a href="#" style="color:#F6EFD2; text-decoration:none; font-weight:500;">Features</a></li>
-            <li><a href="#team" style="color:#F6EFD2; text-decoration:none; font-weight:500;">Team</a></li>
-        </ul>
-
-        <div class="nav-right" style="display:flex; align-items:center; gap:12px;">
-        </div>
-
+    <nav id="navbar">
+        <ul>
+            <li id="product-nav"><a href="index.html#products">Products</a></li>
+            <li id="cta-nav"><a href="index.html#team">Contact</a></li>
+        </ul>    
+        <div class="logo"><a href="index.html#home"><img src="image/logo.png" alt="Logo"></a></div>
     </nav>
-</div>
 
-
-
-    <!-- Hero Section -->
-    <section id="home" class="hero" style="background:#F6EFD2; padding:80px 40px; position:relative;">
-        <div class="hero-left" style="margin-right:40px;">
-            <div class="hero-content" style="margin:20px 0;">
-                <h2 style="margin-bottom:20px;">[Hero Title]</h2>
-                <h3 style="margin-bottom:20px;">[Hero Subtitle]</h3>
-                <p style="margin-bottom:30px;">[Hero Description]</p>
-                <button class="cta-button" style="background:#E43636; color:#F6EFD2; border:none; padding:12px 24px; border-radius:6px; font-weight:600; cursor:pointer;">[Hero Button Text]</button>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Lorem Ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi orci, mollis non dignissim nec, eleifend sed justo. Sed nec purus nibh. Integer dictum hendrerit quam nec sollicitudin.</p>
+                <button><a href="index.html#products">Explore</a></button>
             </div>
-        </div>
-        <div class="hero-gallery" style="margin-left:40px;">
-            <div class="gallery-item item-1" style="margin:10px;">
-                <img src="[Hero Image 1 Path]" alt="[Hero Image 1 Alt]" style="width:100%;height:100%;object-fit:cover;border-radius:8px;">
-            </div>
-            <div class="gallery-item item-2" style="margin:10px;">
-                <img src="[Hero Image 2 Path]" alt="[Hero Image 2 Alt]" style="width:100%;height:100%;object-fit:cover;border-radius:8px;">
-            </div>
-            <div class="gallery-item item-3" style="margin:10px;">
-                <img src="[Hero Image 3 Path]" alt="[Hero Image 3 Alt]" style="width:100%;height:100%;object-fit:cover;border-radius:8px;">
-            </div>
-            <div class="gallery-item item-4" style="margin:10px;">
-                <img src="[Hero Image 4 Path]" alt="[Hero Image 4 Alt]" style="width:100%;height:100%;object-fit:cover;border-radius:8px;">
-            </div>
-            <div class="gallery-item item-5" style="margin:10px;">
-                <img src="[Hero Image 5 Path]" alt="[Hero Image 5 Alt]" style="width:100%;height:100%;object-fit:cover;border-radius:8px;">
+            <div class="hero-side">
+                <div class="image-gridA">
+                    <div class="image-box"><img src="image/box1.png" alt="Product 1"></div>
+                    <div class="image-boxr"><img src="image/box2.png" alt="Product 2"></div>
+                </div>
+                <div class="image-gridB">
+                    <div class="image-boxr"><img src="image/box3.png" alt="Product 3"></div>
+                    <div class="image-box"><img src="image/box4.png" alt="Product 4"></div>
+                </div>
+                <div class="Mobile-Image">
+                    <div class="mobile-image"><img src="" alt="mobile-image"></div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section id="products" class="products" style="background:#F6EFD2; padding:80px 40px;">
-        <div class="container">
-            <h2 style="text-align:center; margin-bottom:20px; color:#000000;">[Products Section Title]</h2>
-            <div style="height:3px; background:#E43636; width:100px; margin:0 auto 40px;"></div>
-            <p style="max-width:600px; margin:0 auto 2rem; color:#000000; text-align:center;">
-                [Products Section Description]
-            </p>
-            <div id="product-list" class="product-advertising-list" style="display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem;"></div>
-            
-    </section>
-
-    <!-- Team Section -->
-    <section id="team" class="team-section" style="background:#F6EFD2; padding:80px 40px;">
-        <div class="container">
-            <div class="team-header">
-                <h2 class="team-title" style="color:#000000; text-align:center;">[Team Section Title]</h2>
-                <div style="height:3px; background:#E43636; width:100px; margin:20px auto 40px;"></div>
-                <p class="team-subtitle" style="color:#000000; text-align:center;">[Team Section Description]</p>
+    <main>
+        <section id="products" class="products">
+            <div class="container">
+                <div id="product-list" class="product-advertising-list"></div>
             </div>
+        </section>  
+    </main>
 
+     <section id="team" class="team-section">
+        <div class="container">
             <div class="team-grid">
-                <!-- Team Member 1 -->
-                <div class="team-card" style="background:#F6EFD2; border:2px solid #000000; border-radius:8px; padding:1.5rem;">
+                <div class="team-card">
                     <div class="team-details">
-                        <h3 class="team-name" style="color:#000000;">[Team Member 1 Name]</h3>
-                        <p class="team-role" style="color:#000000;">[Team Member 1 Role]</p>
+                        <h3 class="team-name">[Team Member 1 Name]</h3>
+                        <p class="team-role">[Team Member 1 Role]</p>
                         
                         <div class="team-info">
                             <div class="info-group">
-                                <h4 class="info-title" style="color:#000000;">Contact</h4>
-                                <p class="contact-info" style="color:#000000;">
+                                <h4 class="info-title">Contact</h4>
+                                <p class="contact-info">
                                     [Team Member 1 Contact]
                                 </p>
                             </div>
                         </div>
                         
-                        <a href="[Team Member 1 WhatsApp Link]" class="team-cta" style="background:#E43636; color:#F6EFD2; display:inline-block; margin-top:1rem; padding:8px 16px; border-radius:6px; text-decoration:none; font-weight:600;" target="_blank" rel="noopener">
+                        <a href="[Team Member 1 WhatsApp Link]" class="team-cta" target="_blank" rel="noopener">
                             WhatsApp
                         </a>
                     </div>
                 </div>
 
-                <!-- Team Member 2 -->
-                <div class="team-card" style="background:#F6EFD2; border:2px solid #000000; border-radius:8px; padding:1.5rem;">
+                <div class="team-card">
                     <div class="team-details">
-                        <h3 class="team-name" style="color:#000000;">[Team Member 2 Name]</h3>
-                        <p class="team-role" style="color:#000000;">[Team Member 2 Role]</p>
+                        <h3 class="team-name">[Team Member 2 Name]</h3>
+                        <p class="team-role">[Team Member 2 Role]</p>
                         
                         <div class="team-info">
                             <div class="info-group">
-                                <h4 class="info-title" style="color:#000000;">Contact</h4>
-                                <p class="contact-info" style="color:#000000;">
+                                <h4 class="info-title">Contact</h4>
+                                <p class="contact-info">
                                     [Team Member 2 Contact]
                                 </p>
                             </div>
                         </div>
                         
-                        <a href="[Team Member 2 WhatsApp Link]" class="team-cta" style="background:#E43636; color:#F6EFD2; display:inline-block; margin-top:1rem; padding:8px 16px; border-radius:6px; text-decoration:none; font-weight:600;" target="_blank" rel="noopener">
+                        <a href="[Team Member 2 WhatsApp Link]" class="team-cta" target="_blank" rel="noopener">
                             WhatsApp
                         </a>
                     </div>
                 </div>
 
-                <!-- Team Member 3 -->
-                <div class="team-card" style="background:#F6EFD2; border:2px solid #000000; border-radius:8px; padding:1.5rem;">
+                <div class="team-card">
                     <div class="team-details">
-                        <h3 class="team-name" style="color:#000000;">[Team Member 3 Name]</h3>
-                        <p class="team-role" style="color:#000000;">[Team Member 3 Role]</p>
+                        <h3 class="team-name">[Team Member 3 Name]</h3>
+                        <p class="team-role">[Team Member 3 Role]</p>
                         
                         <div class="team-info">
                             <div class="info-group">
-                                <h4 class="info-title" style="color:#000000;">Contact</h4>
-                                <p class="contact-info" style="color:#000000;">
+                                <h4 class="info-title">Contact</h4>
+                                <p class="contact-info">
                                     [Team Member 3 Contact]
                                 </p>
                             </div>
                         </div>
                         
-                        <a href="[Team Member 3 WhatsApp Link]" class="team-cta" style="background:#E43636; color:#F6EFD2; display:inline-block; margin-top:1rem; padding:8px 16px; border-radius:6px; text-decoration:none; font-weight:600;" target="_blank" rel="noopener">
+                        <a href="[Team Member 3 WhatsApp Link]" class="team-cta" target="_blank" rel="noopener">
                             WhatsApp
                         </a>
                     </div>
@@ -151,7 +119,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer" style="background:#000000; color:#F6EFD2; padding:40px 0; text-align:center;">
         <div class="container">
             <p>&copy; 2025 Hussain Tandoor. All rights reserved.</p>
@@ -163,41 +130,5 @@
             </p>
         </div>
     </footer>
-
-    <script>
-        // Mobile menu toggle for navbar
-        (function () {
-            const menuToggle = document.getElementById('menu-toggle');
-            const navbar = document.querySelector('.navbar');
-            const navLinks = document.querySelectorAll('.nav-link');
-            
-            if (menuToggle) {
-                // Toggle menu open/close
-                menuToggle.addEventListener('click', function (e) {
-                    e.stopPropagation();
-                    navbar.classList.toggle('nav-open');
-                    this.classList.toggle('active');
-                });
-                
-                // Close menu when clicking on a nav link (on mobile)
-                navLinks.forEach(link => {
-                    link.addEventListener('click', function () {
-                        navbar.classList.remove('nav-open');
-                        menuToggle.classList.remove('active');
-                    });
-                });
-                
-                // Close menu when clicking outside (on mobile)
-                document.addEventListener('click', function (event) {
-                    if (!navbar.contains(event.target)) {
-                        navbar.classList.remove('nav-open');
-                        menuToggle.classList.remove('active');
-                    }
-                });
-            }
-        })();
-    </script>
-    <script src="products/renderProducts.js">    
-    </script>
 </body>
 </html>

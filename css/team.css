@@ -1,0 +1,122 @@
+.team-section {
+    padding: 80px 40px;
+}
+
+.team-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.team-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.team-title {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.team-divider {
+    height: 3px;
+    background: #E43636;
+    width: 100px;
+    margin: 20px auto 40px;
+    border-radius: 2px;
+}
+
+.team-subtitle {
+    color: #000000;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.2rem;
+    align-items: start;
+    margin-top: 1rem;
+}
+
+.team-card {
+    background-color: white;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.team-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+}
+
+.team-name {
+    color: white;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+}
+
+.team-role {
+    color: #000000;
+    margin: 0;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.team-info {
+    width: 100%;
+}
+
+.info-group {
+    background: rgba(0,0,0,0.03);
+    border-radius: 6px;
+    padding: 0.75rem;
+}
+
+.info-title {
+    color: #000000;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+}
+
+.contact-info {
+    color: #000000;
+    margin: 0;
+}
+
+.team-cta {
+    background: var(--accent-color);
+    color: #F6EFD2;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+}
+
+.team-card:hover {
+    box-shadow: 0 12px 40px var(--accent-color);
+    transform: translateY(-8px);
+    border-color: var(--primary);
+}
+
+.team-card:hover::before {
+    opacity: 1;
+}
