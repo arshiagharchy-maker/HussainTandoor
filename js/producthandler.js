@@ -61,9 +61,7 @@ function render(product) {
     sku.textContent = product.sku ? product.sku : (product.id !== undefined ? String(product.id) : '');
     subtitle.textContent = product.subtitle || '';
 
-    eyebrow.textContent = ''; // no pre-order / price label by requirement
-
-    // Features: support array or string (comma/newline separated). If none, show first 3 lines of description
+    eyebrow.textContent = ''; 
     featuresList.innerHTML = '';
     let features = [];
     if (Array.isArray(product.features) && product.features.length) features = product.features;
@@ -79,7 +77,6 @@ function render(product) {
     featuresList.appendChild(li);
     });
 
-    // Description (full) hidden by default, toggled with More button
     const fullDesc = (typeof product.description === 'string') ? product.description : '';
     if (fullDesc.trim()) {
     descriptionBlock.textContent = fullDesc;

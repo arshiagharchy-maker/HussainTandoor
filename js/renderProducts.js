@@ -36,7 +36,7 @@
   function imageSrc(product) {
     if (!product) return "";
     if (typeof product.image === "string") return product.image;
-    if (typeof product.image === "number") return `images/product-${product.image}.jpg`;
+    if (typeof product.image === "number") return `/images/product-${product.image}.jpg`;
     return product.imagePath || product.image_url || "";
   }
 
@@ -68,7 +68,7 @@
     card.appendChild(p);
 
     const actions = document.createElement('div'); actions.className = 'product-actions';
-    const learn = document.createElement('a'); learn.className = 'btn btn-outline'; learn.href = `../html/product.html?id=${encodeURIComponent(prod.id)}`; learn.textContent = 'Learn More'; actions.appendChild(learn);
+    const learn = document.createElement('a'); learn.className = 'btn btn-outline'; learn.href = `/html/product.html?id=${encodeURIComponent(prod.id)}`; learn.textContent = 'Learn More'; actions.appendChild(learn);
     card.appendChild(actions);
 
     container.appendChild(card);
