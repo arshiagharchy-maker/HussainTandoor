@@ -48,8 +48,6 @@
       const sku = document.createElement('div'); sku.className = 'product-sku'; sku.textContent = prod.sku; card.appendChild(sku);
     }
 
-    const h3 = document.createElement('h3'); h3.className = 'product-title'; h3.textContent = prod.name || '[Product]'; card.appendChild(h3);
-
     const frame = document.createElement('div'); frame.className = 'product-image-frame';
     const src = imageSrc(prod);
 
@@ -62,6 +60,7 @@
 
     card.appendChild(frame);
     
+    const h3 = document.createElement('h3'); h3.className = 'product-title'; h3.textContent = prod.name || '[Product]'; card.appendChild(h3);
     const p = document.createElement("p");
     p.className = "product-desc";
     p.textContent = prod.description || "";

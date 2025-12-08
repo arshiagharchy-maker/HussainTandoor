@@ -45,7 +45,7 @@ nav li, ul a{
 }
 
 #cta-nav:hover{
-    background-color: #fa3636;
+    background-color: var(--hover-color);
 }
 
 #logo{

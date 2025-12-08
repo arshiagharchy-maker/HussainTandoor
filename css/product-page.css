@@ -89,8 +89,6 @@ body{
 .features-list li{
     margin-bottom:8px;
 }
-
-/* "More" toggle */
 .more-toggle{
     display:inline-block;
     margin-top:6px;
