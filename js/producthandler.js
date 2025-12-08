@@ -121,7 +121,6 @@ function render(product) {
     thumbs.appendChild(btn);
     });
 
-    // Category (optional)
     if (product.category) {
     categoryEl.textContent = `Category: ${product.category}`;
     categoryEl.style.display = 'block';
@@ -130,13 +129,11 @@ function render(product) {
     }
 }
 
-// Run
 (async function init() {
     try {
     const raw = await fetchSequential(tryPaths);
     const products = normalizeProducts(raw);
     if (!products || products.length === 0) {
-        // fallback minimal sample
         const sample = {
         id: 'demo-01',
         name: 'Demo Product',
@@ -159,7 +156,6 @@ function render(product) {
     render(product);
     } catch (err) {
     console.error('Failed to load products:', err);
-    // render fallback sample
     const fallback = {
         id: 'demo-01',
         name: 'Demo Product',
