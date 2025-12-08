@@ -70,8 +70,8 @@ button a, a:visited{
     flex: 0 0 240px;
 }
 .image-gridA{
-    margin-top: 1em;
     display: grid;
+    margin-top: 1em;
     gap: 1em;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 70px);
@@ -86,7 +86,20 @@ button a, a:visited{
     border-color: black;
 }
 
+.image-boxr img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image-box img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
 .image-box{
+    display: block;
+    object-fit: fill;
     background: #ffffff;
     border-radius: 20px;
     overflow: hidden;
@@ -97,6 +110,8 @@ button a, a:visited{
 }
 
 .image-boxr{
+    display: block;
+    object-fit: fill;
     background: #ffffff;
     border-radius: 20px;
     overflow: hidden;
