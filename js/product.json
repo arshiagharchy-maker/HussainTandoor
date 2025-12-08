@@ -3,7 +3,7 @@
     {
       "id": 0,
       "name": "test",
-      "image": "../image/product-2.png",
+      "image": "image/product-2.png",
       "subtitle": "test",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum eleifend iaculis. Ut aliquet sagittis pretium. Nam vestibulum sem enim, eu convallis leo sodales vel. Pellentesque libero enim, mattis ac lectus nec, pulvinar tristique justo. Fusce cursus urna velit, sed placerat ipsum consequat eu. Nulla semper id elit faucibus maximus.",
       "features": "test",
@@ -12,7 +12,7 @@
     {
       "id": 0,
       "name": "test",
-      "image": "../image/product-2.png",
+      "image": "image/product-2.png",
       "subtitle": "test",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum eleifend iaculis. Ut aliquet sagittis pretium. Nam vestibulum sem enim, eu convallis leo sodales vel. Pellentesque libero enim, mattis ac lectus nec, pulvinar tristique justo. Fusce cursus urna velit, sed placerat ipsum consequat eu. Nulla semper id elit faucibus maximus.",
       "features": "test",
@@ -21,7 +21,7 @@
     {
       "id": 0,
       "name": "test",
-      "image": "../image/product-2.png",
+      "image": "image/product-2.png",
       "subtitle": "test",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum eleifend iaculis. Ut aliquet sagittis pretium. Nam vestibulum sem enim, eu convallis leo sodales vel. Pellentesque libero enim, mattis ac lectus nec, pulvinar tristique justo. Fusce cursus urna velit, sed placerat ipsum consequat eu. Nulla semper id elit faucibus maximus.",
       "features": "test",
@@ -30,7 +30,7 @@
     {
       "id": 0,
       "name": "test",
-      "image": "../image/product-2.png",
+      "image": "image/product-2.png",
       "subtitle": "test",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum eleifend iaculis. Ut aliquet sagittis pretium. Nam vestibulum sem enim, eu convallis leo sodales vel. Pellentesque libero enim, mattis ac lectus nec, pulvinar tristique justo. Fusce cursus urna velit, sed placerat ipsum consequat eu. Nulla semper id elit faucibus maximus.",
       "features": "test",
@@ -39,7 +39,7 @@
     {
       "id": 0,
       "name": "test",
-      "image": "../image/product-2.png",
+      "image": "image/product-2.png",
       "subtitle": "test",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum eleifend iaculis. Ut aliquet sagittis pretium. Nam vestibulum sem enim, eu convallis leo sodales vel. Pellentesque libero enim, mattis ac lectus nec, pulvinar tristique justo. Fusce cursus urna velit, sed placerat ipsum consequat eu. Nulla semper id elit faucibus maximus.",
       "features": "test",
@@ -48,7 +48,7 @@
     {
       "id": 0,
       "name": "test",
-      "image": "../image/product-2.png",
+      "image": "image/product-2.png",
       "subtitle": "test",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum eleifend iaculis. Ut aliquet sagittis pretium. Nam vestibulum sem enim, eu convallis leo sodales vel. Pellentesque libero enim, mattis ac lectus nec, pulvinar tristique justo. Fusce cursus urna velit, sed placerat ipsum consequat eu. Nulla semper id elit faucibus maximus.",
       "features": "test",
@@ -57,7 +57,7 @@
     {
       "id": 0,
       "name": "test",
-      "image": "../image/product-2.png",
+      "image": "image/product-2.png",
       "subtitle": "test",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum eleifend iaculis. Ut aliquet sagittis pretium. Nam vestibulum sem enim, eu convallis leo sodales vel. Pellentesque libero enim, mattis ac lectus nec, pulvinar tristique justo. Fusce cursus urna velit, sed placerat ipsum consequat eu. Nulla semper id elit faucibus maximus.",
       "features": "test",
@@ -66,7 +66,7 @@
     {
       "id": 0,
       "name": "test",
-      "image": "../image/product-2.png",
+      "image": "image/product-2.png",
       "subtitle": "test",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum eleifend iaculis. Ut aliquet sagittis pretium. Nam vestibulum sem enim, eu convallis leo sodales vel. Pellentesque libero enim, mattis ac lectus nec, pulvinar tristique justo. Fusce cursus urna velit, sed placerat ipsum consequat eu. Nulla semper id elit faucibus maximus.",
       "features": "test",
@@ -75,7 +75,7 @@
     {
       "id": 0,
       "name": "test",
-      "image": "../image/product-2.png",
+      "image": "image/product-2.png",
       "subtitle": "test",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum eleifend iaculis. Ut aliquet sagittis pretium. Nam vestibulum sem enim, eu convallis leo sodales vel. Pellentesque libero enim, mattis ac lectus nec, pulvinar tristique justo. Fusce cursus urna velit, sed placerat ipsum consequat eu. Nulla semper id elit faucibus maximus.",
       "features": "test",
@@ -84,7 +84,7 @@
     {
       "id": 0,
       "name": "test",
-      "image": "../image/product-2.png",
+      "image": "image/product-2.png",
       "subtitle": "test",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum eleifend iaculis. Ut aliquet sagittis pretium. Nam vestibulum sem enim, eu convallis leo sodales vel. Pellentesque libero enim, mattis ac lectus nec, pulvinar tristique justo. Fusce cursus urna velit, sed placerat ipsum consequat eu. Nulla semper id elit faucibus maximus.",
       "features": "test",
@@ -93,48 +93,11 @@
     {
       "id": 0,
       "name": "test",
-      "image": "../image/product-2.png",
-      "subtitle": "test",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum eleifend iaculis. Ut aliquet sagittis pretium. Nam vestibulum sem enim, eu convallis leo sodales vel. Pellentesque libero enim, mattis ac lectus nec, pulvinar tristique justo. Fusce cursus urna velit, sed placerat ipsum consequat eu. Nulla semper id elit faucibus maximus.",
-      "features": "test",
-      "category": "test"
-    },
-    {
-      "id": 0,
-      "name": "test",
-      "image": "../image/product-2.png",
-      "subtitle": "test",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum eleifend iaculis. Ut aliquet sagittis pretium. Nam vestibulum sem enim, eu convallis leo sodales vel. Pellentesque libero enim, mattis ac lectus nec, pulvinar tristique justo. Fusce cursus urna velit, sed placerat ipsum consequat eu. Nulla semper id elit faucibus maximus.",
-      "features": "test",
-      "category": "test"
-    },
-    {
-      "id": 0,
-      "name": "test",
-      "image": "../image/product-2.png",
-      "subtitle": "test",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum eleifend iaculis. Ut aliquet sagittis pretium. Nam vestibulum sem enim, eu convallis leo sodales vel. Pellentesque libero enim, mattis ac lectus nec, pulvinar tristique justo. Fusce cursus urna velit, sed placerat ipsum consequat eu. Nulla semper id elit faucibus maximus.",
-      "features": "test",
-      "category": "test"
-    },
-    {
-      "id": 0,
-      "name": "test",
-      "image": "../image/product-2.png",
-      "subtitle": "test",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum eleifend iaculis. Ut aliquet sagittis pretium. Nam vestibulum sem enim, eu convallis leo sodales vel. Pellentesque libero enim, mattis ac lectus nec, pulvinar tristique justo. Fusce cursus urna velit, sed placerat ipsum consequat eu. Nulla semper id elit faucibus maximus.",
-      "features": "test",
-      "category": "test"
-    },
-    {
-      "id": 0,
-      "name": "test",
-      "image": "../image/product-2.png",
+      "image": "image/product-2.png",
       "subtitle": "test",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum eleifend iaculis. Ut aliquet sagittis pretium. Nam vestibulum sem enim, eu convallis leo sodales vel. Pellentesque libero enim, mattis ac lectus nec, pulvinar tristique justo. Fusce cursus urna velit, sed placerat ipsum consequat eu. Nulla semper id elit faucibus maximus.",
       "features": "test",
       "category": "test"
     }
-    
   ]
 }
