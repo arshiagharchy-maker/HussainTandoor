@@ -1,46 +1,12 @@
 .container{
-    padding: 0 auto;
-    padding-top: 10em;
+    margin: 0 auto;
+    padding-top: 7em;
     padding-bottom: 3em;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-.hero-text h1{
-    margin-left: 0.5em;
-    font-size: clamp(4.4rem, 6vw, 9.8rem);
-    line-height: 1.02;
-    margin-bottom: 24px;
-    color: #e5391e;
-}
-
-.hero-text p{
-    margin-left: 2.1em;
-    font-size: clamp(1.4rem, 1.6vw, 4.2rem);
-    margin-bottom: 28px;
-    max-width: 48ch;
-    color: var(--text-color);
-}
-
-button{
-    margin-left: 5em;
-    padding: 1.5em;
-    border-radius: 5px;
-    border: none;
-    background: var(--accent-color);
-    color: var(--text-color);
-    font-size: 0.8em;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    display: flex;
-}
-
-button a, a:visited{
-    color: var(--text-color);
-    text-decoration: none;
-}
 
 .hero{
     width: 100%;
@@ -50,115 +16,126 @@ button a, a:visited{
 }
 
 .hero .container{
-    padding-right: 4em;
     display: flex;
     align-items: center;
     gap: 2em;
-    position: relative;
+    position: relative; 
     z-index: 1;
 }
 
 .hero-text{
-    flex: 1 1 60%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2em;
+    flex: 0 1 50%;
 }
 
-.hero-cta button{ 
-    margin-right: 12px; 
+.hero-text h1 {
+    font-size: clamp(4rem, 2.6vw, 5rem);
+    line-height: 1.02;
+    color: #e5391e;
 }
-
-.hero-side{
-    flex: 0 0 240px;
-}
-.image-gridA{
-    display: grid;
-    margin-top: 1em;
-    gap: 1em;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 70px);
-    position: relative;
-}
-
-.image-gridB{
-    display: grid;
-    grid-template-columns: 200px 500px;
-    gap: 1em;
-    position: relative;
-    border-color: black;
-}
-
-.image-boxr img{
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.image-box img{
-    max-width: 100%;
-    max-height: 100%;
+.hero-text p{
+    font-size: clamp(1rem, 1.6vw, 4.2rem);
+    max-width: 48ch;
+    color: var(--text-color);
 }
 
 
-.image-box{
-    display: block;
-    object-fit: fill;
-    background: #ffffff;
+
+#hero-li a{
+    padding: 1.5em;
+    border-radius: 5px;
+    border: none;
+    background: var(--accent-color);
+    color: var(--text-color);
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    flex: 0 0 auto;
+    text-decoration: none;
+}
+
+
+.img-hero{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.product-hero{
+    background: white;
     border-radius: 20px;
-    overflow: hidden;
-    width: clamp(350px, 80vw, 500px);
-    height: clamp(100px, 80vw, 200px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-    border: 1px solid rgba(0,0,0,0.18);
+    padding: 20px;
+    box-sizing: border-box;
+}    
+
+.product1 {
+    flex: 2 1 60%; 
+    height: 150px;
 }
 
-.image-boxr{
-    display: block;
-    object-fit: fill;
-    background: #ffffff;
-    border-radius: 20px;
-    overflow: hidden;
-    width: clamp(100px, 80vw, 200px);
-    height: clamp(100px, 80vw, 200px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-    border: 1px solid rgba(0,0,0,0.18);
+.product2 {
+    flex: 1 1 35%;
+    height: 150px;
 }
 
-.mobile-image{
-    display: none;
-    position: absolute;
-    background: #ffffff;
-    top: 100px;
-    left: 335px;
-    width: 650px;
-    height: 600px;
-    border-radius: 100px;
+.product3 {
+    flex: 1 1 35%;
+    height: 150px;
 }
 
-@media(max-width: 900px){
+.product4 {
+    flex: 2 1 60%;
+    height: 150px;
+}
+
+
+@media (max-width: 900px){
+
+    .container{
+        padding-top: 1em;
+    }
+
     button{
-        font-size: 1em;
+        align-self: center;
+    }
+
+    .hero-text{
+        display: grid;
+        margin-left: 2em;
     }
 }
 
-@media(max-width: 700px){
-    button{
-        font-size: 1.8em;
-    }
 
-    .image-gridA, .image-gridB{
-        display: none;
-    }
+@media (max-width: 499px){
 
-    .hero-text h1{
-        font-size: 6em;
-        font-weight: 1000px;
+    .hero-text{
+        text-align: left;
     }
 
     .hero-text p{
-        font-size: 2em;
-        max-width: 30em;
-        font-weight: 1000px;
+        justify-content: center;
+        text-align: left;
+        max-width: 100ch;
     }
 
-    .mobile-image{
-        display: flex;
+    .product-hero{
+        display: none;
+    }
+
+    .container{
+        padding-top: 1em;
+    }
+
+    .hero-side{
+        display: none;
+    }
+}
+
+@media (max-width: 498px){
+    #hero-li a{
+       margin-left: 3em;
     }
 }

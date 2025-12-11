@@ -1,71 +1,73 @@
 nav {
+    display: flex;
+    justify-content: space-between;
     position: sticky;
     top: 0;
-    z-index: 100;
-    display: flex;
+    z-index: 1000;
     background-color: var(--primary-color);
-    justify-content: space-between;
-    align-items: center;
-    min-width: 1050px;
-    padding: 1em;
     border-bottom: 3px solid var(--accent-color);
 }
 
+
 .logo img{
-    order: 1;
-    height: 5em;
-    justify-content: space-between;
+    align-items: center;
+    height: 4em;
+    margin-left: 2em;
     cursor: pointer;
-    margin-left: 4em;
 }
 
 
 nav ul {
-    list-style: none;
     display: flex;
-    margin-right: 3.6em;
-    gap: 1em;
-    order: 2;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1.5em;
+    list-style: none;
+    gap: 2em;                                     
 }
 
-nav li, ul a{
+nav ul a{
     font-size: medium;
     color: var(--text-color);
     text-decoration: none;
-    padding: 1em;
 }
 
-#cta-nav{
-    border-radius: 10px;
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.4em 0.8em;
     background-color: var(--accent-color);
-}
-
-#product-nav:hover{
-    background-color: #1f1d1d;
-}
-
-#cta-nav:hover{
-    background-color: var(--hover-color);
-}
-
-#logo{
+    border-radius: 5px;
+    color: var(--text-color);
+    font-weight: 600;
     cursor: pointer;
 }
 
-@media(max-width: 700px){
+.contact li a{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+
+.contact:hover{
+    background-color: var(--hover-color);
+}
+
+@media (max-width: 500px){
     .logo img{
-        height: 7em;
-        order: 1;
-        margin-left: 3em;
+        margin-left: 2em;
+        height: 3em;
+    }
+
+    .contact{
+        border-radius: 10px;
     }
 
     nav ul{
-        margin-right: 6em;
-    }
-
-    nav li, ul a{
-        order: 1;
-        font-size: x-large;
-        padding: 1.2em;
+        margin-right: 2em;
     }
 }
