@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/hero.css">
@@ -27,7 +29,7 @@
             </ul>
         </nav>
     </header>
-    <section id="home " class="hero">
+    <section id="home" class="hero">
         <div class="container">
             <div class="hero-text">
                 <h1>Lorem Ipsum</h1>
@@ -54,8 +56,15 @@
 
     <main>
         <section id="products" class="products">
+            <div class="product-title">
+                <h1>Products</h1>
+            </div>
             <div class="container">
-                <div id="product-list" class="product-advertising-list"></div>
+                <div class="product-scroller">
+                    <button id="product-scroll-prev" class="scroll-btn prev" aria-label="Scroll left">‹</button>
+                    <div id="product-list" class="product-advertising-list"></div>
+                    <button id="product-scroll-next" class="scroll-btn next" aria-label="Scroll right">›</button>
+                </div>
             </div>
         </section>  
     </main>
@@ -126,7 +135,7 @@
         </div>
     </section>
 
-    <footer class="footer" style="background:#000000; color:#F6EFD2; padding:40px 0; text-align:center;">
+    <footer class="footer" style="background:#000000; color:#F6EFD2; padding: 1px 1; text-align:center;">
         <div class="container">
             <p>&copy; 2025 Hussain Tandoor. All rights reserved.</p>
             <p>Contact: <a href="mailto:info@hussaintandoor.com" style="color:#F6EFD2; text-decoration:underline;">info@hussaintandoor.com</a> | <a href="tel:+60123456789" style="color:#F6EFD2; text-decoration:underline;">+60 12-345 6789</a></p>
@@ -139,4 +148,3 @@
     </footer>
 </body>
 </html>
-

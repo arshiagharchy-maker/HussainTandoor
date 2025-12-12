@@ -1,4 +1,8 @@
 (async function () {
+   if (document.readyState === 'loading') {
+    await new Promise((res) => document.addEventListener('DOMContentLoaded', res, { once: true }));
+  }
+
   const tryPaths = [
     "js/product.json",
     "./js/product.json",
@@ -14,7 +18,6 @@
         const data = await res.json();
         return Array.isArray(data) ? data : (data.PRODUCTS || data.products || []);
       } catch (e) {
-
       }
     }
     throw new Error("Could not load product.json");
@@ -39,6 +42,8 @@
     if (typeof product.image === "number") return `/images/product-${product.image}.jpg`;
     return product.imagePath || product.image_url || "";
   }
+
+  container.innerHTML = '';
 
   products.forEach(prod => {
     const card = document.createElement('div');
@@ -72,4 +77,46 @@
 
     container.appendChild(card);
   });
+
+  function setupScrollControls(container) {
+    const prev = document.getElementById('product-scroll-prev');
+    const next = document.getElementById('product-scroll-next');
+    if (!prev || !next) return;
+
+    const getCardWidth = () => {
+      const v = getComputedStyle(document.documentElement).getPropertyValue('--card-width') || '';
+      const n = parseFloat(v);
+      return Number.isFinite(n) ? n : 150;
+    };
+
+    const getScrollAmount = () => {
+      const cardW = getCardWidth();
+      return Math.max(Math.round(cardW * 2), Math.round(container.clientWidth * 0.6));
+    };
+
+    const updateButtons = () => {
+      const isScrollable = container.scrollWidth > container.clientWidth + 1;
+      prev.style.display = isScrollable ? '' : 'none';
+      next.style.display = isScrollable ? '' : 'none';
+      prev.disabled = container.scrollLeft <= 0;
+      next.disabled = Math.ceil(container.scrollLeft + container.clientWidth) >= container.scrollWidth;
+    };
+
+    prev.addEventListener('click', () => {
+      container.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+    });
+
+    next.addEventListener('click', () => {
+      container.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+    });
+
+    container.addEventListener('scroll', () => {
+      updateButtons();
+    }, { passive: true });
+
+    window.addEventListener('resize', updateButtons);
+    setTimeout(updateButtons, 50);
+  }
+
+  setupScrollControls(container);
 })();
