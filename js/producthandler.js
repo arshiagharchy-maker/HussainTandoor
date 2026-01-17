@@ -1,7 +1,9 @@
 (function () {
 const tryPaths = [
     "/js/product.json",
-    "./js/product.json"
+    "./js/product.json",
+    "js/product.json",
+    "../js/product.json"
 ];
 
 function fetchSequential(paths) {
@@ -44,6 +46,31 @@ function toImageArray(product) {
     return arr.map(String).filter(Boolean).filter((v,i,a)=>a.indexOf(v)===i);
 }
 
+function toMediaArray(product) {
+    const media = [];
+    if (!product) return media;
+    
+    if (Array.isArray(product.images) && product.images.length) {
+        product.images.forEach(img => media.push({ type: 'image', src: img }));
+    }
+    if (Array.isArray(product.gallery) && product.gallery.length) {
+        product.gallery.forEach(img => media.push({ type: 'image', src: img }));
+    }
+    if (product.image) media.push({ type: 'image', src: product.image });
+    if (product.imagePath) media.push({ type: 'image', src: product.imagePath });
+    if (product.image_url) media.push({ type: 'image', src: product.image_url });
+
+    if (Array.isArray(product.videos) && product.videos.length) {
+        product.videos.forEach(vid => media.push({ type: 'video', src: vid }));
+    }
+    if (product.video) media.push({ type: 'video', src: product.video });
+    if (product.video_url) media.push({ type: 'video', src: product.video_url });
+    
+    return media.filter((item, index, arr) => 
+        arr.findIndex(i => i.src === item.src) === index
+    );
+}
+
 function render(product) {
     const title = document.getElementById('product-title');
     const sku = document.getElementById('product-sku');
@@ -55,7 +82,6 @@ function render(product) {
     const descriptionBlock = document.getElementById('product-description');
     const inquiryBtn = document.getElementById('inquiry-btn');
     const eyebrow = document.getElementById('product-eyebrow');
-    const categoryEl = document.getElementById('product-category');
 
     title.textContent = product.name || product.title || 'Product';
     sku.textContent = product.sku ? product.sku : (product.id !== undefined ? String(product.id) : '');
@@ -99,34 +125,100 @@ function render(product) {
     descriptionBlock.hidden = true;
     }
 
-    // Gallery
     thumbs.innerHTML = '';
-    const gallery = toImageArray(product);
-    mainImage.src = gallery[0] || '';
-    mainImage.alt = product.name || 'Product image';
-
-    gallery.forEach((src, i) => {
-    const btn = document.createElement('button');
-    btn.type = 'button';
-    btn.className = 'thumb' + (i === 0 ? ' selected' : '');
-    const img = document.createElement('img');
-    img.src = src;
-    img.alt = product.name ? `${product.name} - view ${i+1}` : `thumb ${i+1}`;
-    btn.appendChild(img);
-    btn.addEventListener('click', () => {
-        mainImage.src = src;
-        thumbs.querySelectorAll('.thumb').forEach(n => n.classList.remove('selected'));
-        btn.classList.add('selected');
-    });
-    thumbs.appendChild(btn);
-    });
-
-    if (product.category) {
-    categoryEl.textContent = `Category: ${product.category}`;
-    categoryEl.style.display = 'block';
-    } else {
-    categoryEl.style.display = 'none';
+    const gallery = toMediaArray(product);
+    
+    if (gallery.length > 0) {
+        const firstItem = gallery[0];
+        if (firstItem.type === 'video') {
+            mainImage.style.display = 'none';
+            let mainVideo = document.getElementById('main-video');
+            if (!mainVideo) {
+                mainVideo = document.createElement('video');
+                mainVideo.id = 'main-video';
+                mainVideo.className = 'main-media';
+                mainVideo.controls = true;
+                mainVideo.preload = 'metadata';
+                mainVideo.style.maxWidth = '100%';
+                mainVideo.style.maxHeight = '100%';
+                mainImage.parentNode.appendChild(mainVideo);
+            }
+            mainVideo.src = firstItem.src;
+            mainVideo.style.display = 'block';
+        } else {
+            mainImage.src = firstItem.src;
+            mainImage.alt = product.name || 'Product image';
+            mainImage.style.display = 'block';
+            const mainVideo = document.getElementById('main-video');
+            if (mainVideo) mainVideo.style.display = 'none';
+        }
     }
+
+    gallery.forEach((item, i) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'thumb' + (i === 0 ? ' selected' : '');
+        
+        if (item.type === 'video') {
+            const video = document.createElement('video');
+            video.src = item.src;
+            video.muted = true;
+            video.preload = 'metadata';
+            video.style.width = '100%';
+            video.style.height = '100%';
+            video.style.objectFit = 'cover';
+            btn.appendChild(video);
+            
+            const playIcon = document.createElement('div');
+            playIcon.className = 'play-icon';
+            playIcon.innerHTML = '▶';
+            playIcon.style.position = 'absolute';
+            playIcon.style.top = '50%';
+            playIcon.style.left = '50%';
+            playIcon.style.transform = 'translate(-50%, -50%)';
+            playIcon.style.color = 'white';
+            playIcon.style.fontSize = '20px';
+            playIcon.style.textShadow = '0 0 5px rgba(0,0,0,0.7)';
+            btn.style.position = 'relative';
+            btn.appendChild(playIcon);
+        } else {
+            const img = document.createElement('img');
+            img.src = item.src;
+            img.alt = product.name ? `${product.name} - view ${i+1}` : `thumb ${i+1}`;
+            img.style.width = '100%';
+            img.style.height = '100%';
+            img.style.objectFit = 'cover';
+            btn.appendChild(img);
+        }
+        
+        btn.addEventListener('click', () => {
+            if (item.type === 'video') {
+                mainImage.style.display = 'none';
+                let mainVideo = document.getElementById('main-video');
+                if (!mainVideo) {
+                    mainVideo = document.createElement('video');
+                    mainVideo.id = 'main-video';
+                    mainVideo.className = 'main-media';
+                    mainVideo.controls = true;
+                    mainVideo.preload = 'metadata';
+                    mainVideo.style.maxWidth = '100%';
+                    mainVideo.style.maxHeight = '100%';
+                    mainImage.parentNode.appendChild(mainVideo);
+                }
+                mainVideo.src = item.src;
+                mainVideo.style.display = 'block';
+            } else {
+                mainImage.src = item.src;
+                mainImage.style.display = 'block';
+                const mainVideo = document.getElementById('main-video');
+                if (mainVideo) mainVideo.style.display = 'none';
+            }
+            
+            thumbs.querySelectorAll('.thumb').forEach(n => n.classList.remove('selected'));
+            btn.classList.add('selected');
+        });
+        thumbs.appendChild(btn);
+    });
 }
 
 (async function init() {
@@ -159,11 +251,12 @@ function render(product) {
     const fallback = {
         id: 'demo-01',
         name: 'Demo Product',
-        subtitle: 'Short subtitle for demo',
-        description: 'Short demo description.\nMore details here.',
-        features: ['Feature A', 'Feature B', 'Feature C'],
-        image: 'image/product-1.jpg',
-        images: ['image/product-1.jpg']
+        subtitle: 'grrr',
+        description: 'Steijejiejtestiungngng',
+        features: ['1 banana', '2 banana', '3 banana'],
+        image: '../image/product-1-2.png',
+        images: ['../image/product-2.png'],
+        videos: ['../video/demo-video.mp4']
     };
     render(fallback);
     }

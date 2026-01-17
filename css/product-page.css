@@ -139,7 +139,7 @@ body{
     box-shadow: 0 8px 40px rgba(0,0,0,0.45);
     border: 1px solid rgba(0,0,0,0.06);
 }
-.image-frame img{
+.image-frame img, .image-frame video{
     max-width:100%;
     max-height:520px;
     object-fit:contain;
@@ -168,7 +168,7 @@ body{
     box-shadow: 0 6px 16px rgba(0,0,0,0.45);
     border: 2px solid transparent;
 }
-.thumbs .thumb img{
+.thumbs .thumb img, .thumbs .thumb video{
     max-width:100%;
     max-height:100%;
     object-fit:cover;
@@ -178,6 +178,17 @@ body{
 .thumbs .thumb.selected{
     border-color: var(--accent-color);
     transform: translateY(-3px);
+}
+
+.thumbs .thumb .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    text-shadow: 0 0 5px rgba(0,0,0,0.7);
+    pointer-events: none;
 }
 
 

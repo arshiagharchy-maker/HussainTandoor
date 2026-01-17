@@ -38,8 +38,10 @@
 
   function imageSrc(product) {
     if (!product) return "";
+    if (Array.isArray(product.images) && product.images.length) return product.images[0];
+    if (Array.isArray(product.gallery) && product.gallery.length) return product.gallery[0];
     if (typeof product.image === "string") return product.image;
-    if (typeof product.image === "number") return `/images/product-${product.image}.jpg`;
+    if (typeof product.image === "number") return `/images/product-${product.image}.jpeg`;
     return product.imagePath || product.image_url || "";
   }
 
