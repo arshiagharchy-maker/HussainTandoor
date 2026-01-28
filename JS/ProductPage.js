@@ -18,10 +18,30 @@ async function loadProducts() {
             thumb.className = 'gallery-item';
             if (index === 0) thumb.classList.add('active');
 
-            const img = document.createElement('img');
-            img.src = media.type === 'image' ? media.src : 'https://placehold.co/80x80/000000/FFFFFF?text=▶';
-            img.alt = `${currentProduct.name} ${media.type} ${index + 1}`;
-            thumb.appendChild(img);
+            if (media.type === 'image') {
+                const img = document.createElement('img');
+                img.src = media.src;
+                img.alt = `${currentProduct.name} ${media.type} ${index + 1}`;
+                thumb.appendChild(img);
+            } else {
+                const videoThumb = document.createElement('div');
+                videoThumb.style.position = 'relative';
+                videoThumb.style.width = '80px';
+                videoThumb.style.height = '80px';
+                videoThumb.style.backgroundColor = '#000';
+                videoThumb.style.display = 'flex';
+                videoThumb.style.alignItems = 'center';
+                videoThumb.style.justifyContent = 'center';
+                videoThumb.style.borderRadius = '4px';
+                videoThumb.style.cursor = 'pointer';
+                
+                const playIcon = document.createElement('div');
+                playIcon.style.fontSize = '32px';
+                playIcon.style.color = '#fff';
+                playIcon.textContent = '▶';
+                videoThumb.appendChild(playIcon);
+                thumb.appendChild(videoThumb);
+            }
 
             thumb.addEventListener('click', () => {
                 document.querySelectorAll('.gallery-item').forEach(item => item.classList.remove('active'));

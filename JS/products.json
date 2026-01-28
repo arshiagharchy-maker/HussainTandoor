@@ -1,9 +1,47 @@
 [
     {
-        "name": "PlaceHolder",
+        "name": "YEMENI TANDOOR OVEN GAS & CHARCOAL",
         "media": [
-            {"type": "image", "src": "https://placehold.co/300x300/e0e0e0/333333?text=Placeholder"}
+            {"type": "image", "src": "./images/Product Image/product-1.png"},
+            {"type": "image", "src": "./images/Product Image/product-1-2.png"},
+            {"type": "image", "src": "./images/Product Image/product-1-3.png"},
+            {"type": "video", "src": "./Videos/product-1.mp4"}
         ],
-        "Features": ["High temperature resistance", "Traditional design", "Easy to clean"]
+        "Features": ["XL large size 30 x 30 inches", "Height 37 inches", "Weight 350 Kg", "Round Tandoor", "With wheels"]
+    },
+    {
+        "name": "Square type stainless steel tandoor",
+        "media": [
+            {"type": "image", "src": "./images/Product Image/product-3.png"},
+            {"type": "image", "src": "./images/Product Image/product-3-2.png"}
+        ],
+        "Features": ["Medium size 30×30 inches", "Height 35 inches", "square type Tandoori oven", "Gas Burner", "With wheels", "Tandoor inside Baffle Plate", "6 Tandoori chicken skewers", "2 Nan Skewersrs"]
+    },
+    {
+        "name": "Stainless steel top cover round type tandoor",
+        "media": [
+            {"type": "image", "src": "./images/Product Image/product-4.png"},
+            {"type": "video", "src": "./Videos/product-4.mp4"}
+        ],
+        "Features": ["Medium size 28×28 inches", "Height 35 inches", "Round Tandoor", "Gas Burner", "With wheels", "Tandoor inside Baffle Plate", "6 Tandoori chicken skewers", "2 Nan Skewersrs"]
+    },
+    {
+        "name": "Stainless steel round type tandoor",
+        "media": [
+            {"type": "image", "src": "./images/Product Image/product-5.jpg"}
+        ],
+        "Features": ["Medium size 28×28 inches", "Height 35 inches", "Round Tandoor", "Gas Burner", "With wheels", "Tandoor inside Baffle Plate", "6 Tandoori chicken skewers", "2 Nan Skewersrs"]
+    },
+
+
+    {
+        "name": "Shawarma Machine",
+        "media": [
+            {"type": "image", "src": "./images/Product Image/product-2.png"},
+            {"type": "image", "src": "./images/Product Image/product-2-2.png"},
+            {"type": "image", "src": "./images/Product Image/product-2-3.png"},
+            {"type": "video", "src": "./Videos/product-2.mp4"}
+        ],
+        "Features": ["3 burners"]
     }
 ]

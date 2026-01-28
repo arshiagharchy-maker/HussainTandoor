@@ -40,11 +40,10 @@
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
-    max-width: 320px;
-    min-height: 400px;
-    max-height: 450px;
+    min-height: 100px;
     display: flex;
     flex-direction: column;
+    flex: 0 0 auto;
 }
 
 .team-card:hover {
@@ -52,29 +51,14 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
-.team-image-section {
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    flex-shrink: 0;
-}
 
-.team-image {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-}
 
 .team-content {
     padding: 1.5rem 2rem 2rem 2rem;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    flex-grow: 1;
-    justify-content: space-between;
+    flex-grow: 0;
 }
 
 .team-name {
@@ -86,13 +70,12 @@
     line-height: 1.2;
 }
 
-.team-role {
+.team-number {
     color: #666666;
     margin: 0;
     font-family: 'Exo 2', sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    margin-bottom: 0.5rem;
     flex-grow: 1;
 }
 
@@ -135,10 +118,7 @@
     }
     
     .team-card {
-        border-radius: 10px;
         max-width: 300px;
-        min-height: 380px;
-        max-height: 420px;
     }
     
     .team-image-section {
@@ -158,7 +138,7 @@
         font-size: 1.25rem;
     }
     
-    .team-role {
+    .team-number {
         font-size: 0.9rem;
     }
     
@@ -181,8 +161,6 @@
     
     .team-card {
         max-width: 100%;
-        min-height: 350px;
-        max-height: 400px;
     }
     
     .team-image-section {
@@ -202,7 +180,7 @@
         font-size: 1.1rem;
     }
     
-    .team-role {
+    .team-number {
         font-size: 0.85rem;
     }
     
