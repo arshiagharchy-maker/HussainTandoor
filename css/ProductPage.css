@@ -4,6 +4,12 @@
     min-height: calc(100vh - 80px);
 }
 
+.something{
+    display: hi;
+    font-family: "Exo 2", sans-serif;
+    color: rgb(145, 143, 143);
+}
+
 .product-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -163,10 +169,17 @@
     border-bottom: 2px solid var(--primary);
 }
 
+.logo{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 0.5rem;
+}
+
 .logo img{
     margin-left: auto;
     width: 8rem;
-    height: 2.5rem;
+    height: 2.7rem;
 }
 
 .back-btn {
@@ -281,6 +294,12 @@
         font-size: 0.95rem;
     }
     
+
+      .something{
+        font-size: 0.5rem;
+    }
+
+
     .product-info {
         gap: 1.5rem;
     }
@@ -294,12 +313,18 @@
     .top-bar-left {
         justify-content: space-between;
     }
-     
-
 
     .back-btn {
-        padding: 0.6rem 0.8rem;
+        padding: 0.8rem 1rem;
         font-size: 0.7rem;
+    }
+
+    .somethingP{
+        font-size: 0.1rem;
+    }
+
+    .logo{
+        gap: 0rem;
     }
 
     .logo img {
