@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function updateNavbar() {
         if (!heroSection) {
-            contactBtn.classList.add('shown')
             return ;
         }
         const currentScrollY = window.scrollY;

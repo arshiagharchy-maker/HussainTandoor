@@ -1,47 +1,160 @@
 [
     {
         "name": "YEMENI TANDOOR OVEN GAS & CHARCOAL",
-        "media": [
-            {"type": "image", "src": "./images/Product Image/product-1.png"},
-            {"type": "image", "src": "./images/Product Image/product-1-2.png"},
-            {"type": "image", "src": "./images/Product Image/product-1-3.png"},
-            {"type": "video", "src": "./Videos/product-1.mp4"}
+        "variants": [
+            {
+                "name": "Standard",
+                "features": ["XL large size 30 x 30 inches", "Height 37 inches", "Weight 350 Kg", "Round Tandoor", "Gas Burner", "With wheels"]
+            }
         ],
-        "Features": ["XL large size 30 x 30 inches", "Height 37 inches", "Weight 350 Kg", "Round Tandoor", "With wheels"]
+        "media": [
+            {"type": "image", "src": "./Images/Product-YeminiTandoor.png"},
+            {"type": "image", "src": "./Images/Product-YeminiTandoor-2.png"},
+            {"type": "image", "src": "./Images/Product-YeminiTandoor-3.png"},
+            {"type": "video", "src": "./Videos/YeminiTandoor.mp4"}
+        ]
+    },
+    {
+        "name": "Shawarma Machine",
+        "variants": [
+            {
+                "name": "Standard",
+                "features": ["3 burners"]
+            }
+        ],
+        "media": [
+            {"type": "image", "src": "./Images/Product-Shawarma.png"},
+            {"type": "image", "src": "./Images/Product-Shawarma-2.png"},
+            {"type": "image", "src": "./Images/Product-Shawarma-3.png"},
+            {"type": "video", "src": "./Videos/Shawarma.mp4"}
+        ]
     },
     {
         "name": "Square type stainless steel tandoor",
-        "media": [
-            {"type": "image", "src": "./images/Product Image/product-3.png"},
-            {"type": "image", "src": "./images/Product Image/product-3-2.png"}
+        "variants": [
+            {
+                "name": "Standard",
+                "features": ["Medium size 30×30 inches", "Height 35 inches", "square type Tandoori oven", "Gas Burner", "With wheels", "Tandoor inside Baffle Plate", "6 Tandoori chicken skewers", "2 Nan Skewers"]
+            }
         ],
-        "Features": ["Medium size 30×30 inches", "Height 35 inches", "square type Tandoori oven", "Gas Burner", "With wheels", "Tandoor inside Baffle Plate", "6 Tandoori chicken skewers", "2 Nan Skewersrs"]
+        "media": [
+            {"type": "image", "src": "./Images/Product-SquareTandoor.png"},
+            {"type": "image", "src": "./Images/Product-SquareTandoor-2.png"}
+        ]
     },
     {
         "name": "Stainless steel top cover round type tandoor",
-        "media": [
-            {"type": "image", "src": "./images/Product Image/product-4.png"},
-            {"type": "video", "src": "./Videos/product-4.mp4"}
+        "variants": [
+            {
+                "name": "Standard",
+                "features": ["Medium size 28×28 inches", "Height 35 inches", "Round Tandoor", "Gas Burner", "With wheels", "Tandoor inside Baffle Plate", "6 Tandoori chicken skewers", "2 Nan Skewers"]
+            }
         ],
-        "Features": ["Medium size 28×28 inches", "Height 35 inches", "Round Tandoor", "Gas Burner", "With wheels", "Tandoor inside Baffle Plate", "6 Tandoori chicken skewers", "2 Nan Skewersrs"]
+        "media": [
+            {"type": "image", "src": "./Images/Product-CoveredRoundTandoor.png"},
+            {"type": "video", "src": "./Videos/CoverRoundTandoor.mp4"}
+        ]
     },
     {
         "name": "Stainless steel round type tandoor",
-        "media": [
-            {"type": "image", "src": "./images/Product Image/product-5.jpg"}
+        "variants": [
+            {
+                "name": "Standard",
+                "features": ["Medium size 28×28 inches", "Height 35 inches", "Round Tandoor", "Gas Burner", "With wheels", "Tandoor inside Baffle Plate", "6 Tandoori chicken skewers", "2 Nan Skewers"]
+            }
         ],
-        "Features": ["Medium size 28×28 inches", "Height 35 inches", "Round Tandoor", "Gas Burner", "With wheels", "Tandoor inside Baffle Plate", "6 Tandoori chicken skewers", "2 Nan Skewersrs"]
+        "media": [
+            {"type": "image", "src": "./Images/Product-CoveredRoundTandoor.png"}
+        ]
     },
-
-
     {
-        "name": "Shawarma Machine",
-        "media": [
-            {"type": "image", "src": "./images/Product Image/product-2.png"},
-            {"type": "image", "src": "./images/Product Image/product-2-2.png"},
-            {"type": "image", "src": "./images/Product Image/product-2-3.png"},
-            {"type": "video", "src": "./Videos/product-2.mp4"}
+        "name": "Grill Net Holder",
+        "variants": [
+            {
+                "name": "Big",
+                "features": ["Length of net: 23 cm", "width of net: 28 cm", "Pemegang Pemanggang Besi ini diperbuat daripada keluli tahan karat berkualiti tinggi, direka dengan dua kepingan pemanggang yang bercantum seperti kotak bersama pemegang kukuh. Reka bentuk ini membolehkan anda meletakkan ikan, ayam, sayur, atau makanan lain di dalamnya, lalu memanggang dengan lebih mudah tanpa risau makanan melekat atau jatuh. Tahan lasak, boleh digunakan berulang kali, dan mudah dibersihkan — sesuai untuk BBQ rumah, restoran, atau penggunaan bersama ketuhar tandoor.", "RM 8/Piece"]
+            },
+            {
+                "name": "Small",
+                "features": ["Length of net: 20 cm", "width of net: 22 cm", "Pemegang Pemanggang Besi ini diperbuat daripada keluli tahan karat berkualiti tinggi, direka dengan dua kepingan pemanggang yang bercantum seperti kotak bersama pemegang kukuh. Reka bentuk ini membolehkan anda meletakkan ikan, ayam, sayur, atau makanan lain di dalamnya, lalu memanggang dengan lebih mudah tanpa risau makanan melekat atau jatuh. Tahan lasak, boleh digunakan berulang kali, dan mudah dibersihkan — sesuai untuk BBQ rumah, restoran, atau penggunaan bersama ketuhar tandoor.", "RM 6/Piece"]
+            }
         ],
-        "Features": ["3 burners"]
+        "media": [
+            {"type": "image", "src": "./Images/Product-GrillNet.png"}
+        ]
+    },
+    {
+        "name": "Naan Skewers",
+        "variants": [
+            {
+                "name": "Standard",
+                "features": ["Length: 34 inches", "Width: 6 mm", "Lidi Naan 2 dalam 1 ini diperbuat daripada keluli tahan karat berkualiti tinggi, direka khas untuk memudahkan proses mengeluarkan naan dari dinding ketuhar tandoor. Bahagian pengikis membantu menanggalkan naan dengan kemas tanpa merosakkan roti, manakala cangkuk membolehkan anda menariknya keluar dengan mudah. Alat ini tahan lama, tidak mudah berkarat, serta mudah dibersihkan — pilihan terbaik untuk restoran atau dapur rumah yang ingin menghasilkan naan gaya autentik.", "RM 60/Set"]
+            }
+        ],
+        "media": [
+            {"type": "image", "src": "./Images/Product-NaanSkewers.png"},
+            {"type": "image", "src": "./Images/Product-NaanSkewers-2.png"}
+        ]
+    },
+    {
+        "name": "Kuali Leper",
+        "variants": [
+            {
+                "name": "12 inches",
+                "features": ["2mm thick, RM30/Piece","4mm thick, RM35/Piece","6mm thick, RM40/Piece","8mm thick, RM45/Piece","Suitable for Roti Jala, Roti Candal, Chapati, Burger, and more!", "Kuali Leper Serbaguna (Tava) ini sesuai untuk menyediakan pelbagai jenis hidangan seperti roti canai, chapati, tosai, tortilla, lempeng, pancake dan banyak lagi. Permukaan rata membantu masakan masak sekata, manakala pemegang kecil di tepi memudahkan pergerakan tanpa mengambil banyak ruang. Pilihan terbaik untuk dapur moden mahupun tradisional."]
+            },
+            {
+                "name": "14 inches",
+                "features": ["2mm thick, RM35/Piece","4mm thick, RM65/Piece","6mm thick, RM75/Piece","8mm thick, RM85/Piece","Suitable for Roti Jala, Roti Candal, Chapati, Burger, and more!", "Kuali Leper Serbaguna (Tava) ini sesuai untuk menyediakan pelbagai jenis hidangan seperti roti canai, chapati, tosai, tortilla, lempeng, pancake dan banyak lagi. Permukaan rata membantu masakan masak sekata, manakala pemegang kecil di tepi memudahkan pergerakan tanpa mengambil banyak ruang. Pilihan terbaik untuk dapur moden mahupun tradisional."]
+            },
+            {
+                "name": "16 inches",
+                "features": ["2mm thick, RM45/Piece","4mm thick, RM75/Piece","6mm thick, RM85/Piece","8mm thick, RM95/Piece","Suitable for Roti Jala, Roti Candal, Chapati, Burger, and more!", "Kuali Leper Serbaguna (Tava) ini sesuai untuk menyediakan pelbagai jenis hidangan seperti roti canai, chapati, tosai, tortilla, lempeng, pancake dan banyak lagi. Permukaan rata membantu masakan masak sekata, manakala pemegang kecil di tepi memudahkan pergerakan tanpa mengambil banyak ruang. Pilihan terbaik untuk dapur moden mahupun tradisional."]
+            }
+        ],
+        "media": [
+            {"type": "image", "src": "./Images/Product-KualiLeper.png"}
+        ]
+    },
+    {
+        "name": "Kebab Skewers",
+        "variants": [
+            {
+                "name": "Size 1",
+                "features": ["Length: 60 cm","Thickness: 3 mm", "Width: 12 mm", "Lidi Logam Keluli Tahan Karat ini sesuai untuk memanggang sate, kebab, hotdog, sayur, atau apa sahaja hidangan BBQ kegemaran anda. Material berkualiti tinggi memastikan ia tahan lama, tidak mudah berkarat, dan boleh digunakan berulang kali. Reka bentuk yang licin memudahkan cucuk bahan dan dibersihkan selepas digunakan. Sesuai untuk BBQ rumah, restoran, atau majlis keluarga.", "RM 19/Piece"]
+            },
+            {
+                "name": "Size 2",
+                "features": ["Length: 60 cm","Thickness: 3 mm", "Width: 20 mm", "Lidi Logam Keluli Tahan Karat ini sesuai untuk memanggang sate, kebab, hotdog, sayur, atau apa sahaja hidangan BBQ kegemaran anda. Material berkualiti tinggi memastikan ia tahan lama, tidak mudah berkarat, dan boleh digunakan berulang kali. Reka bentuk yang licin memudahkan cucuk bahan dan dibersihkan selepas digunakan. Sesuai untuk BBQ rumah, restoran, atau majlis keluarga.", "RM 19/Piece"]
+            }
+        ],
+        "media": [
+            {"type": "image", "src": "./Images/Product-KebabSkewers.png"}
+        ]
+    },
+    {
+        "name": "Shish Tawuk Skewer",
+        "variants": [
+            {
+                "name": "Standard",
+                "features": ["Area: 4.7mm²","Length: 60 cm", "Lidi Segi Empat Shish Tawuk ini diperbuat daripada keluli tahan karat berkualiti tinggi, direka khas untuk memastikan daging dan ayam tidak mudah berpusing semasa dipanggang. Bentuk segi empat memberikan kawalan lebih baik serta hasil bakaran yang sekata. Tahan lasak, boleh digunakan berulang kali, tidak mudah berkarat, dan mudah dibersihkan. Pilihan ideal untuk penyediaan Shish Tawuk gaya asli di rumah atau restoran.", "RM 12/Piece"]
+            }
+        ],
+        "media": [
+            {"type": "image", "src": "./Images/Product-ShishTawukSkewer.png"}
+        ]
+    },
+    {
+        "name": "Chicken Tandoori Skewer",
+        "variants": [
+            {
+                "name": "Standard",
+                "features": ["Length: 30 inches","Width: 6 mm","Shape: Cylindrical", "Lidi Ayam Tandoor ini diperbuat daripada keluli tahan karat berkualiti tinggi, direka khas dengan hujung berbentuk cangkuk untuk digantung terus ke dalam ketuhar tandoor. Bentuk unik ini memastikan daging, ayam atau kebab masak sekata dengan haba arang yang asli. Ia tahan lasak, boleh digunakan berulang kali, tidak mudah berkarat, dan mudah dibersihkan. Sesuai untuk restoran atau penggunaan di rumah bagi menghasilkan hidangan tandoor yang autentik.", "RM 20/Piece"]
+            }
+        ],
+        "media": [
+            {"type": "image", "src": "./Images/Product-ChickenTandooriSkewer.png"},
+            {"type": "image", "src": "./Images/Product-ChickenTandooriSkewer-2.png"}
+        ]
     }
 ]

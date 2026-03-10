@@ -1,10 +1,11 @@
 async function loadProducts() {
     try {
-        const response = await fetch('JS/products.json');
+        const response = await fetch('JS/products.json?v=1.1');
         const products = await response.json();
         const gallery = document.querySelector('.gallery');
         const mainMedia = document.querySelector('.product-image-wrapper');
         const productTitle = document.querySelector('.product-title');
+        const variantSelect = document.querySelector('.variant-select');
         const featuresList = document.querySelector('.features-list');
 
         const urlParams = new URLSearchParams(window.location.search);
@@ -12,7 +13,29 @@ async function loadProducts() {
 
         const currentProduct = products[productIndex];
         productTitle.textContent = currentProduct.name;
-        featuresList.innerHTML = currentProduct.Features.map(feature => `<li>${feature}</li>`).join('');
+
+        variantSelect.innerHTML = '';
+        currentProduct.variants.forEach((variant, index) => {
+            const option = document.createElement('option');
+            option.value = index;
+            option.textContent = variant.name;
+            variantSelect.appendChild(option);
+        });
+
+        function updateFeatures(variantIndex) {
+            const selectedVariant = currentProduct.variants[variantIndex];
+            featuresList.innerHTML = selectedVariant.features.map(feature => `<li>${feature}</li>`).join('');
+        }
+
+        if (currentProduct.variants.length > 0) {
+            variantSelect.value = 0;
+            updateFeatures(0);
+        }
+
+        variantSelect.addEventListener('change', (e) => {
+            updateFeatures(parseInt(e.target.value));
+        });
+
         currentProduct.media.forEach((media, index) => {
             const thumb = document.createElement('div');
             thumb.className = 'gallery-item';

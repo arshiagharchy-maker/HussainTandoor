@@ -5,7 +5,6 @@
 }
 
 .something{
-    display: hi;
     font-family: "Exo 2", sans-serif;
     color: rgb(145, 143, 143);
 }
@@ -97,6 +96,24 @@
     letter-spacing: 0.5px;
 }
 
+.variant-select {
+    font-family: "Exo 2", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-red);
+    border-radius: 5px;
+    background-color: var(--bg-white);
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.variant-select:hover {
+    background-color: var(--primary-red);
+    color: var(--text-white);
+}
+
 .product-features {
     margin: 0;
 }
@@ -167,6 +184,7 @@
     padding: 1rem 2rem;
     background-color: var(--bg-white);
     border-bottom: 2px solid var(--primary);
+    border-bottom: 0.2rem solid var(--primary-red);
 }
 
 .logo{
