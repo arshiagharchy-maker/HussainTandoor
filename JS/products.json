@@ -64,7 +64,7 @@
             }
         ],
         "media": [
-            {"type": "image", "src": "./Images/Product-CoveredRoundTandoor.png"}
+            {"type": "image", "src": "./Images/Product-RoundTandoor.png"}
         ]
     },
     {
@@ -101,15 +101,15 @@
         "variants": [
             {
                 "name": "12 inches",
-                "features": ["2mm thick, RM30/Piece","4mm thick, RM35/Piece","6mm thick, RM40/Piece","8mm thick, RM45/Piece","Suitable for Roti Jala, Roti Candal, Chapati, Burger, and more!", "Kuali Leper Serbaguna (Tava) ini sesuai untuk menyediakan pelbagai jenis hidangan seperti roti canai, chapati, tosai, tortilla, lempeng, pancake dan banyak lagi. Permukaan rata membantu masakan masak sekata, manakala pemegang kecil di tepi memudahkan pergerakan tanpa mengambil banyak ruang. Pilihan terbaik untuk dapur moden mahupun tradisional."]
+                "features": ["2mm thick, RM30/Piece","4mm thick, RM35/Piece","6mm thick, RM40/Piece","8mm thick, RM45/Piece","Suitable for Roti Jala, Roti Canai, Chapati, Burger, and more!", "Kuali Leper Serbaguna (Tava) ini sesuai untuk menyediakan pelbagai jenis hidangan seperti roti canai, chapati, tosai, tortilla, lempeng, pancake dan banyak lagi. Permukaan rata membantu masakan masak sekata, manakala pemegang kecil di tepi memudahkan pergerakan tanpa mengambil banyak ruang. Pilihan terbaik untuk dapur moden mahupun tradisional."]
             },
             {
                 "name": "14 inches",
-                "features": ["2mm thick, RM35/Piece","4mm thick, RM65/Piece","6mm thick, RM75/Piece","8mm thick, RM85/Piece","Suitable for Roti Jala, Roti Candal, Chapati, Burger, and more!", "Kuali Leper Serbaguna (Tava) ini sesuai untuk menyediakan pelbagai jenis hidangan seperti roti canai, chapati, tosai, tortilla, lempeng, pancake dan banyak lagi. Permukaan rata membantu masakan masak sekata, manakala pemegang kecil di tepi memudahkan pergerakan tanpa mengambil banyak ruang. Pilihan terbaik untuk dapur moden mahupun tradisional."]
+                "features": ["2mm thick, RM35/Piece","4mm thick, RM65/Piece","6mm thick, RM75/Piece","8mm thick, RM85/Piece","Suitable for Roti Jala, Roti Canai, Chapati, Burger, and more!", "Kuali Leper Serbaguna (Tava) ini sesuai untuk menyediakan pelbagai jenis hidangan seperti roti canai, chapati, tosai, tortilla, lempeng, pancake dan banyak lagi. Permukaan rata membantu masakan masak sekata, manakala pemegang kecil di tepi memudahkan pergerakan tanpa mengambil banyak ruang. Pilihan terbaik untuk dapur moden mahupun tradisional."]
             },
             {
                 "name": "16 inches",
-                "features": ["2mm thick, RM45/Piece","4mm thick, RM75/Piece","6mm thick, RM85/Piece","8mm thick, RM95/Piece","Suitable for Roti Jala, Roti Candal, Chapati, Burger, and more!", "Kuali Leper Serbaguna (Tava) ini sesuai untuk menyediakan pelbagai jenis hidangan seperti roti canai, chapati, tosai, tortilla, lempeng, pancake dan banyak lagi. Permukaan rata membantu masakan masak sekata, manakala pemegang kecil di tepi memudahkan pergerakan tanpa mengambil banyak ruang. Pilihan terbaik untuk dapur moden mahupun tradisional."]
+                "features": ["2mm thick, RM45/Piece","4mm thick, RM75/Piece","6mm thick, RM85/Piece","8mm thick, RM95/Piece","Suitable for Roti Jala, Roti Canai, Chapati, Burger, and more!", "Kuali Leper Serbaguna (Tava) ini sesuai untuk menyediakan pelbagai jenis hidangan seperti roti canai, chapati, tosai, tortilla, lempeng, pancake dan banyak lagi. Permukaan rata membantu masakan masak sekata, manakala pemegang kecil di tepi memudahkan pergerakan tanpa mengambil banyak ruang. Pilihan terbaik untuk dapur moden mahupun tradisional."]
             }
         ],
         "media": [

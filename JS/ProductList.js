@@ -1,6 +1,6 @@
 async function loadProducts() {
     try {
-        const response = await fetch('../JS/products.json');
+        const response = await fetch('../JS/products.json?v=1.2');
         const products = await response.json();
         const container = document.querySelector('.product-grid');
 

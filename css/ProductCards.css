@@ -1,7 +1,8 @@
 .products{
-    margin-right: 1.2rem;
+    margin-right: 1.5rem;
     background-color: #dedfe0;
-    margin-top: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .product-card {
@@ -22,7 +23,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, 350px);
     justify-content: center;
-    gap: 3.5rem;
+    gap: 4rem;
     padding: 0.1rem 0;
 }
 
@@ -94,10 +95,18 @@
 }
 
 @media (max-width: 1025px) {
+    .products{
+        margin-right: 2.9rem;
+    }
+
+    .product-grid{
+        grid: 10rem;
+    }
+
     .product-card {
         padding: 1.5rem;
         max-width: 100%;
-        gap: 1.25rem;
+        gap: 1rem;
         border-radius: 20px;
     }
 
@@ -122,6 +131,10 @@
 }
 
 @media (max-width: 480px) {
+    .products{
+        margin-right: 0rem;
+    }
+
     .product-card {
         width: 300px;
         padding: 1rem;
