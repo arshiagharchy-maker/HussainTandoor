@@ -111,7 +111,7 @@
     position: relative;
 }
 
-.text-block h2 {
+.text-block h1 {
     color: var(--text-dark);
     font-size: 4.5rem;
     font-weight: 800;
@@ -119,6 +119,10 @@
     line-height: 1.3;
     margin-bottom: 2rem;
     letter-spacing: 1px;
+}
+
+.text-block li {
+    list-style: none;
 }
 
 .view-btn {
@@ -182,7 +186,7 @@
         margin-bottom: 1rem;
     }
 
-    .text-block h2 {
+    .text-block h1 {
         font-size: 4.8rem;
         margin-bottom: 1.5rem;
     }
@@ -234,7 +238,7 @@
         margin-bottom: 0.5rem;
     }
 
-    .text-block h2 {
+    .text-block h1 {
         font-size: 2.3rem;
         margin-bottom: 1rem;
     }
