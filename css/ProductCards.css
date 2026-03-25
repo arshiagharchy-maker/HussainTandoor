@@ -1,8 +1,8 @@
 .products-section{
-    margin-right: 1.5rem;
+    margin-right: 1.2rem;
     background-color: #dedfe0;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .product-card {
@@ -23,7 +23,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, 350px);
     justify-content: center;
-    gap: 4rem;
+    gap: 5rem;
     padding: 0.1rem 0;
 }
 
@@ -94,19 +94,16 @@
     transform: translateY(0);
 }
 
-@media (max-width: 1025px) {
-    .products{
-        margin-right: 2.9rem;
-    }
 
-    .product-grid{
-        grid: 10rem;
+@media (max-width: 1200px) {
+    .products-section{
+        margin-right: 1.5rem;
     }
 
     .product-card {
-        padding: 1.5rem;
-        max-width: 100%;
-        gap: 1rem;
+        width: 350px;
+        padding: 1rem;
+        gap: 1.25rem;
         border-radius: 20px;
     }
 
@@ -130,9 +127,98 @@
     }
 }
 
-@media (max-width: 480px) {
-    .products{
+
+
+@media (max-width: 1025px) {
+    .products-section {
         margin-right: 0rem;
+    }
+
+
+    .product-grid {
+        gap: 2.5rem;
+    }
+    .product-card {
+        padding: 1rem;
+        width: 300px;
+        gap: 1.25rem;
+        border-radius: 20px;
+    }
+
+    .product-title {
+        font-size: 1.25rem;
+    }
+
+    .product-image-wrapper {
+        min-height: 250px;
+        padding: 0.75rem 0;
+    }
+
+    .product-image {
+        max-height: 280px;
+    }
+
+    .learn-more-btn {
+        padding: 0.65rem 1.25rem;
+        font-size: 0.9rem;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .products-section{
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .product-grid{
+        gap: 2.5rem;
+    }
+
+    .product-card {
+        width: 300px;
+        padding: 1rem;
+        gap: 1rem;
+        border-radius: 16px;
+    }
+
+    .product-title {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .product-image-wrapper {
+        min-height: 200px;
+        padding: 0.5rem 0;
+    }
+
+    .product-image {
+        max-height: 220px;
+    }
+
+    .learn-more-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+        width: 100%;
+        justify-self: stretch;
+    }
+
+    .product-footer {
+        justify-content: stretch;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .products-section{
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+        display: grid;
+        justify-content: center;
+    }
+
+    .product-grid{
+        gap: 2.5rem;
     }
 
     .product-card {
